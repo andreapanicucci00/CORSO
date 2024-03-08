@@ -1,0 +1,100 @@
+
+	DATA DEFENDERS
+
+
+
+
+
+
+
+Relazione sugli errori e le correzioni nel codice:
+
+Inizializzazione di scelta:
+1.) char scelta = {'0'};
+È stato corretto in:
+
+char scelta;
+Motivazione: La dichiarazione di scelta dovrebbe essere semplicemente come riportato di sopra
+
+Lettura della scelta con scanf:
+
+
+2.) scanf ("&d" , &scelta);
+È stato corretto in:
+
+
+scanf (" %c", &scelta);
+Motivazione: La lettura di un carattere richiede l'uso di %c e uno spazio prima di %c elimina eventuali caratteri di nuova riga residui nel buffer di input.
+
+I primi due creano problemi nella compilazione ed esecuzione del programma
+
+Operatore errato nella divisione:
+
+
+3.) int divisione = a % b;
+È stato corretto e aggiustato in:
+
+
+if (b != 0) {
+    float divisione = (float)a / b;
+    printf("La divisione tra %d e %d è: %f/n", a, b, divisione);
+} else {
+    printf("Errore: divisione per 0/n");
+}
+Motivazione: L'operatore % è utilizzato per il modulo, mentre la divisione richiede l'operatore /. Inoltre, è stata aggiunta una condizione per evitare la divisione per zero, con un messaggio di errore appropriato.
+
+Dichiarazione di variabili in moltiplica():
+
+
+4.) short int a, b = 0;
+È stato corretto in:
+
+
+int a, b;
+Motivazione: Le variabili a e b devono essere dichiarate separatamente per evitare inizializzazioni accidentali e permettere una corretta esecuzione.
+
+In oltre scan (“%f” , &a);
+È stato corretto in:
+scan(“%d”, &a); 
+Motivazione: L’operatore %d viene usato per la lettura di interi 
+
+Dichiarazione di variabili in dividi():
+
+
+5.) int a, b = 0;
+È stato corretto in:
+
+
+int a, b;
+Motivazione: Le variabili a e b devono essere dichiarate separatamente per evitare inizializzazioni accidentali e permettere una corretta esecuzione.
+
+Dimensione dell'array stringa:
+
+
+6.) char stringa[10];
+È stato corretto in:
+
+
+char stringa[100];
+Motivazione: Aumentare la dimensione dell'array stringa per gestire stringhe più lunghe
+
+
+Input della stringa:
+
+
+7.) scanf("%s", &stringa);
+È stato corretto in:
+
+
+scanf("%s", stringa);
+Motivazione: Non è necessario l'operatore & per gli array di caratteri in quanto gli array agiscono come puntatori alla loro prima posizione di memoria.
+
+Aggiunta di printf in ins_string():
+
+
+printf("Hai inserito la stringa: %s/n", stringa);
+Motivazione: Per fornire un feedback all'utente sull'input della stringa.
+
+
+8.) Aggiunta funzione sleep(5); aggiungendo in oltre #include <unistd.h> per l'utilizzo di sleep(5) la quale funzione permette di aumentare i secondi di visibilità dell’outpout
+
