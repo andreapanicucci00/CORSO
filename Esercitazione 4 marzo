@@ -1,0 +1,5 @@
+esercitazione 4 marzo 
+DMZ: La creazione di una DMZ aiuta a isolare i servizi esposti a Internet, riducendo il rischio di un attacco diretto sulla rete interna.
+Firewall perimetrale: Il firewall tra le zone controlla il flusso del traffico, garantendo che solo il traffico autorizzato possa attraversare i confini delle diverse zone.
+Posizionamento dei servizi: Posizionare i servizi come il server web e il server di posta elettronica nella DMZ consente loro di essere accessibili da Internet senza compromettere la sicurezza della rete interna.
+IPS:Un IPS è un sistema di sicurezza informatica che, a differenza di un IDS, non solo rileva attività sospette o intrusioni, ma può anche intraprendere azioni attive per bloccare o prevenire tali attacchi
