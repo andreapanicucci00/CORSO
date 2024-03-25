@@ -1,0 +1,5 @@
+Durante la prima giornata di Buildweek abbiamo effettuato le seguenti attività:
+-Analisi preliminare della topologia di rete dove si effettueranno i test
+-Creazione del programma Python per il port scanning
+-Creazione del programma Python per l'enumerazione dei metodi HTTP
+-Inizio studio sul programma per effettuare attacchi bruteforce su pagine di login.
