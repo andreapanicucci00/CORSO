@@ -1,0 +1,12 @@
+-Il comando nc -lvp 8000 sta avviando un listener sulla porta 8000 utilizzando Netcat (o nc),     
+un'utilità di rete per leggere e scrivere dati su connessioni di rete.
+
+-il comando sqlmap viene utilizzato per eseguire un attacco di tipo SQL Injection su un'applicazione web che si trova all'indirizzo specificato. Viene fornito l'URL dell'applicazione, i cookie di sessione, il database e la tabella da analizzare, e infine si richiede l'estrazione delle colonne e dei dati dalla tabella specificata.
+
+Come vediamo su kali linux gli attacchi sono andati a buon fine 
+vedere gli screenshot
+
+
+
+
+
