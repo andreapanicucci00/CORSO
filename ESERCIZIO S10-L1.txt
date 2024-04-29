@@ -1,0 +1,19 @@
+Traccia: 
+Esercizio Analisi statica: 
+
+Con riferimento al file eseguibile contenuto nella cartella «Esercizio_Pratico_U3_W2_L1» presente sul Desktop della vostra macchina virtuale dedicata all’analisi dei malware, rispondere ai seguenti quesiti: 
+• Indicare le librerie importate dal malware, fornendo una descrizione per ognuna di esse 
+• Indicare le sezioni di cui si compone il malware, fornendo una descrizione per ognuna di essa 
+• Aggiungere una considerazione finale sul malware in analisi in base alle informazioni raccolte
+
+
+1: Utilizzando CFF Explorer e andando nella cartella <Import Directory> vediamo che il malware importa 4 librerie:
+
+-KERNEL32.DLL: Che contiene le funzioni principali per interagire con il sistema operativo, come la manipolazione di file o la gestione della memoria 
+-ADVAPI32.DLL: Contiene le funzioni per interagire con i servizi e i registri del sistema operativo
+-MSVCRT.DLL: Contiene funzioni per la manipolazione di stringhe, allocazione memoria e chiamate per input/output
+WININET.DLL: Contiene funzioni per l'implementazione dei protocolli di rete come HTTP, FTP.
+
+2: Dalla sezione <selection headers> vediamo altre 3 sezioni UPX0, UPX1, UPX2 che pero non ci restituiscono nessuna infomazione del tipo .text, .rdata, .data e .rsrc
+
+3: Sempre da <Import Directory> nella funzione KERNEL32.DLL troviamo LoadLibraryA e GetProcAddress che ci suggerisce che questo malware importa le librerie senza dare ulteriori informazioni sulle stesse librerie importate
