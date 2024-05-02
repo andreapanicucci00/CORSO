@@ -1,0 +1,37 @@
+Traccia: 
+Nella lezione teorica del mattino, abbiamo visto i fondamenti del linguaggio Assembly. Dato il codice in Assembly per la CPU x86 allegato qui di seguito, identificare lo scopo di ogni istruzione, inserendo una descrizione per ogni riga di codice. Ricordate che i numeri nel formato 0xYY sono numeri esadecimali. Per convertirli in numeri decimali utilizzate pure un convertitore online, oppure la calcolatrice del vostro computer (per programmatori).
+
+0x00001141 <+8>:    mov    EAX,0x20 
+0x00001148 <+15>:   mov    EDX,0x38 
+0x00001155 <+28>:   add    EAX,EDX 
+0x00001157 <+30>:   mov    EBP, EAX 
+0x0000115a <+33>:   cmp    EBP,0xa 
+0x0000115e <+37>:   jge    0x1176 <main+61> 
+0x0000116a <+49>:   mov    eax,0x0 
+0x0000116f <+54>:   call   0x1030 <printf@plt>
+
+-0x00001141 <+8>:    mov    EAX,0x20 
+Sposta il valore 32 nel registro EAX
+
+-0x00001148 <+15>:   mov    EDX,0x38 
+Sposta il valore 56 nel registro EDX 
+
+-0x00001155 <+28>:   add    EAX,EDX
+somma il registro EAX con il registro EDX salvando il risultato nel registro EAX, somma = 88
+
+-0x00001157 <+30>:   mov    EBP, EAX 
+Sposta la somma nel registro EBP
+
+-0x0000115a <+33>:   cmp    EBP,0xa
+cmp= compare, compara l'uguaglianza del numero 0xa(10) con il valore somma contenuto in EBP
+
+-0x0000115e <+37>:   jge    0x1176 <main+61> 
+jge salto condizionale, se 88>10 il salto condizionale avviene
+
+-0x0000116a <+49>:   mov    eax,0x0 
+sposta zero in EAX
+
+-0x0000116f <+54>:   call   0x1030 <printf@plt>
+chiamata di funzione alla funzione printf
+
+ 
